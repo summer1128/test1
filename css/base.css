@@ -43,6 +43,7 @@ a{
 	margin-left: auto;
 	margin-right: auto;
   z-index: 999;
+	transition:all 0.3s;
 }
 .new-style{
 	background: #83c44e;
