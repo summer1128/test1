@@ -1,0 +1,130 @@
+.container-big{
+	width: 100%;
+	height: 40px;
+	background: #f5f5f5;
+   padding-bottom: 40px;
+   box-sizing: border-box;
+}
+.container{
+	width: 1226px;
+	height: 100%;
+	font-size: 12px;
+	line-height: 40px;
+	color:#616161;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	box-sizing: border-box;
+
+}
+.container .two{
+	padding: 0 5px;
+	box-sizing: border-box;
+
+}
+.main{
+	   
+		background: #f5f5f5;
+		color: #333;
+		padding-bottom: 40px;
+    box-sizing: border-box;
+}
+.row{
+	width: 1226px;
+	height: 1077px;
+	/* background: #008000; */
+	margin: 0 auto;
+}
+.row-left{
+	width: 234px;
+	height: 100%;
+	float: left;
+    min-height: 1px;
+		background: #fff;
+    padding-bottom: 56px;
+		box-sizing: border-box;
+}
+.row-left-main{
+width: 100%;
+	/* height: 278px; */
+padding: 0 0 0 47px;
+box-sizing: border-box;
+overflow: hidden;
+}
+.row-top-big{
+	margin: 40px 0 15px 0;
+	/* height: 52px; */
+   
+  font-size: 16px;
+  font-weight: 400;
+   line-height: 52px;
+   color: #333;
+}
+.row-top-bottom {
+	width: 100%;
+}
+.row-top-bottom li{
+	padding: 6px 0;
+	color: #757575;
+	font-size: 14px;
+
+}
+.row-top-bottom li:first-child{
+	padding-top: 0;
+  /* color: #FF6700; */
+}
+.row-left-main1{
+	margin-top: -20px;
+}
+.row-top-bottom li:hover{
+	color: #FF6700;
+	cursor: pointer;
+}
+.row-right{
+	width: 978px;
+	background: #fff;
+	margin-left: 13px;
+	float: left;
+	padding:36px 48px;
+    box-sizing: border-box;
+}
+.row-right-top{
+	width: 100%;
+	height: 180px;
+	padding: 10px 0;
+	border-bottom: 1px solid #E0E0E0;
+}
+.user-card-left{
+	float: left;
+    width: 302px;
+    height: 160px;
+}
+.user-card-right{
+	float: right;
+	width: 302px;
+	height: 160px;
+}
+.user-card-left img{
+	border: 1px solid #e0e0e0;
+    border-radius: 150px;
+	width: 150px;
+    height: 150px;
+	padding: 4px;
+	box-sizing: border-box;
+	float: left;
+}
+.user-card-left-text{
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 50px 0 0 20px;
+}
+.user-card-left-text .one{
+	margin: 0 0 10px;
+    color: #b0b0b0;
+	font-size: 14px;
+}
+.user-card-left-text .two{
+	font-size: 12px;
+    color: #ff6700;
+	margin-top: 20px;
+}

@@ -8,8 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/head.css"/>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-
 	 <link rel="shortcut icon" href="img/favicon.ico"/>
+	 <script src="js/index.js"></script>
 	</head>
 	<body>
 		<!-- 头部开始 -->
@@ -61,10 +61,12 @@
 		</div>
 	    <!-- 头部结束 -->
 		<!-- 导航栏开始	 -->
+		
+
 			<div class="next_box">
-		 <div class="next_middle">
-			<div class="left">
-			 <img src="img/mi-logo.png" >
+		    <div class="next_middle">
+			  <div class="left">
+			  <img src="img/mi-logo.png" >
 			</div>
 			<div class="middle">
 				<div class="text">小米手机</div>
@@ -78,28 +80,87 @@
 				<div class="text">服务</div>
 				<div class="text">社区</div>
 		   </div>
-		    <div class="right">
-				<div class="box">
-					<input type="text" />
+		    <div class="right ">
+				<div class="box right-unactive">
+					<input type="text" class="xuanzhong-input"/>
+					
 					<div class="input-text">
-						<span>小米8</span>
-						<span class="two">小米MIX 2S</span>
-						<span>故宫K歌耳机</span>
+						<span >小米8</span>
+						<span class="two" >小米MIX 2S</span>
+						<span >故宫K歌耳机</span>
+						</div>
+						<div class="xianshi-select">
+							<div><span>小米6X</span><i>约有6件</i></div>
+							<div><span>小米MIX&nbsp;2S</span><i>约有5件</i></div>
+							<div><span>黑鲨游戏手机</span><i>约有6件</i></div>
+							<div><span>红米Note5</span><i>约有6件</i></div>
+							<div><span>红米5A</span><i>约有6件</i></div>
+							<div><span>小米电视4C</span><i>约有6件</i></div>
+							<div><span>电视32英寸</span><i>约有6件</i></div>
+							<div><span>笔记本pro</span><i>约有6件</i></div>
+							<div><span>空气净化器</span><i>约有6件</i></div>
+							<div><span>净水器</span><i>约有6件</i></div>
 						</div>
 				</div>
 	
-				<div class="sousuo">
+				<div class="sousuo sousuo-unactive">
 					<div class="iconfont tubiao">&#xe69b;</div>
 				</div>
 			</div>
 		 </div>
+		    <div class="next_box_xianshi">
+					<div class="container1">
+						<ul class="children-list">
+							<li> 
+							<div class="figure"><img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mix3-320.png" ></div>
+							 <p style="margin: 0;line-height: 20px;color: #333;">小米MIX3</p>
+							 <p style="margin: 0;line-height: 20px;color: #FF6700;">3299元起</p>
+							<div class="flags">
+								<div class="flag">新品</div>
+							</div>
+							</li>
+							<li> 
+							<div class="figure"><img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mix3-320.png" ></div>
+							<p style="margin: 0;line-height: 20px;color: #333;">小米MIX3</p>
+							<p style="margin: 0;line-height: 20px;color: #FF6700;">3299元起</p>
+							<div class="flags">
+								<div class="flag">新品</div>
+							</div>
+							</li>
+							<li> 
+							<div class="figure"><img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mix3-320.png" ></div>
+							<p style="margin: 0;line-height: 20px;color: #333;">小米MIX3</p>
+							<p style="margin: 0;line-height: 20px;color: #FF6700;">3299元起</p>
+							<div class="flags">
+								<div class="flag">新品</div>
+							</div>
+							</li>
+							<li> 
+							<div class="figure"><img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mix3-320.png" ></div>
+							<p style="margin: 0;line-height: 20px;color: #333;">小米MIX3</p>
+							<p style="margin: 0;line-height: 20px;color: #FF6700;">3299元起</p>
+							<div class="flags">
+								<div class="flag">新品</div>
+							</div>
+							</li>
+							<li> 
+							<div class="figure"><img src="https://i1.mifile.cn/f/i/g/2015/cn-index/mix3-320.png" ></div>
+							<p style="margin: 0;line-height: 20px;color: #333;">小米MIX3</p>
+							<p style="margin: 0;line-height: 20px;color: #FF6700;">3299元起</p>
+							<div class="flags">
+								<div class="flag">新品</div>
+							</div>
+							</li>
+						</ul>
+					</div>
+				</div>
 		</div>
-	   <!-- 导航栏结束 -->
+		 <!-- 导航栏结束 -->
 		 <!-- banner开始 -->
 		 <div class="banner">
 			 <div class="banner-image">
 				 <ul>
-					 <li><img src="img/banner1.jpg" ></li>
+					 <li class="active"><img src="img/banner1.jpg" ></li>
 					 <li><img src="img/banner2.jpg" ></li>
 					 <li><img src="img/banner3.jpg" ></li>
 					 <li><img src="img/banner4.jpg" ></li>
@@ -1218,7 +1279,7 @@
 		 <!-- 广告结束 -->
 		 
 		 <!-- 闪购开始 -->
-		 <div class="flash-purchase">
+		 <div class="flash-purchase"  onselectstart="return false;">
 			 <div class="flash-purchase-top">
 				 <div class="flash-purchase-top-left">小米闪购</div>
 				 <div class="flash-purchase-top-right">
@@ -1242,7 +1303,10 @@
 					 </div>
 				 </div>
 				 
-				 <ul class="clear">
+				 <div style="width: 978px;overflow: hidden;">
+				 <ul class="clear"  >
+					 
+					 
 					 <li class="li-one">
 						 <div class="jian">1元秒杀</div>
 						 <img src="img/pms_1537356460.6227958!220x220.png">
@@ -1275,9 +1339,122 @@
 						 <p class="three">999元<del>888</del></p>
 						 <div class="mask"></div>
 					 </li>
+					 
+					 <li class="li-one">
+					 	<div class="jian">2元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 <div class="mask"></div>
+					 </li>
+					 <li class="li-two">
+					 	<div class="jian">1元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 	<div class="mask"></div>
+					 </li>
+					 <li class="li-three">
+					 	<div class="jian">1元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 	<div class="mask"></div>
+					 </li>
+					 <li class="li-four">
+					 	<div class="jian">1元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 	<div class="mask"></div>
+					 </li>
+					 
+					 <li class="li-one">
+					 	<div class="jian">3元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 <div class="mask"></div>
+					 </li>
+					 <li class="li-two">
+					 	<div class="jian">1元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 	<div class="mask"></div>
+					 </li>
+					 <li class="li-three">
+					 	<div class="jian">1元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 	<div class="mask"></div>
+					 </li>
+					 <li class="li-four">
+					 	<div class="jian">1元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 	<div class="mask"></div>
+					 </li>
+					 
+					 
+					 <li class="li-one">
+					 	<div class="jian">4元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 <div class="mask"></div>
+					 </li>
+					 <li class="li-two">
+					 	<div class="jian">1元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 	<div class="mask"></div>
+					 </li>
+					 <li class="li-three">
+					 	<div class="jian">1元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 	<div class="mask"></div>
+					 </li>
+					 <li class="li-four">
+					 	<div class="jian">1元秒杀</div>
+					 	<img src="img/pms_1537356460.6227958!220x220.png">
+					 	<p>红米6 4GB+64GB 流沙金</p>
+					 	<p class="two">小屏高性能的双摄手机</p>
+					 	<p class="three">999元<del>888</del></p>
+					 	<div class="mask"></div>
+					 </li>
+					 
+					 <li class="li-four">
+					 <div class="jian">9元秒杀</div>
+					 <img src="img/pms_1537356460.6227958!220x220.png">
+					 <p>红米6 4GB+64GB 流沙金</p>
+					 <p class="two">小屏高性能的双摄手机</p>
+					 <p class="three">999元<del>888</del></p>
+					 <div class="mask"></div>
+					 </li>
+					 </div>
 				 </ul>
 				 
 			 </div>
+		
+		
+		
 		</div>
 		 <!-- 闪购结束 -->
 		 <!-- 图片开始 -->
@@ -1304,79 +1481,86 @@
 			 		</div>
 			 		
 			 		<div class="collocation-bottom-right">
-			 			<ul>
-			 				<li class="one">
-								<div class="new-style">新品</div>
-			 					<img src="img/pms_1527685277.65255600!220x220.jpg">
-			 					<p class="text1">小米8  SE  6GB+48GB</p>
-								<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
-			 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
-			 					
-			 				</li>
-			 				<li class="two">
-								<div class="new-style">新品</div>
+			 		
+						<ul>
+								 				<li class="one">
+													<div class="new-style">新品</div>
+								 					<img src="img/pms_1527685277.65255600!220x220.jpg">
+								 					<p class="text1">小米8  SE  6GB+48GB</p>
+													<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
+								 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
+								 					
+								 				</li>
+								 				<li class="two">
+													<div class="new-style">新品</div>
+					
+								 					<img src="img/pms_1527685277.65255600!220x220.jpg">
+								 					<p class="text1">小米8  SE  6GB+48GB</p>
+								 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
+								 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
+								 				
+								 				</li >
+								 				<li class="three">
+													<div class="jian">减300元</div>
+								 					<img src="img/pms_1527685277.65255600!220x220.jpg">
+								 					<p class="text1">小米8  SE  6GB+48GB</p>
+								 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
+								 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
+								 					
+								 				</li>
+								 				<li class="four">
+													<div class="jian">减600元</div>
+					
+								 					<img src="img/pms_1527685277.65255600!220x220.jpg">
+								 					<p class="text1">小米8  SE  6GB+48GB</p>
+								 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
+								 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
+								 					
+								 				</li>
+								 				<li class="one five">
+													<div class="jian">享8折</div>
+					
+								 					<img src="img/pms_1527685277.65255600!220x220.jpg">
+								 					<p class="text1">小米8  SE  6GB+48GB</p>
+								 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
+								 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
+								 					
+								 				</li>
+								 				<li class="six">
+													<div class="jian">减100元</div>
+					
+								 					<img src="img/pms_1527685277.65255600!220x220.jpg">
+								 					<p class="text1">小米8  SE  6GB+48GB</p>
+								 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
+								 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
+								 				
+								 				</li>
+								 				<li class="seven">
+													<div class="jian">减130元</div>
+					
+								 					<img src="img/pms_1527685277.65255600!220x220.jpg">
+								 					<p class="text1">小米8  SE  6GB+48GB</p>
+								 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
+								 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
+								 					
+								 				</li>
+								 			<li class="seven">
+												<div class="jian">减30元</div>
+					
+								 				<img src="img/pms_1527685277.65255600!220x220.jpg">
+								 				<p class="text1">小米8  SE  6GB+48GB</p>
+								 				<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
+								 				<p class="text3"><span>1799元</span>        <del>1999</del></p>
+								 			</li>
+								 				
 
-			 					<img src="img/pms_1527685277.65255600!220x220.jpg">
-			 					<p class="text1">小米8  SE  6GB+48GB</p>
-			 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
-			 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
-			 				
-			 				</li >
-			 				<li class="three">
-								<div class="jian">减300元</div>
-			 					<img src="img/pms_1527685277.65255600!220x220.jpg">
-			 					<p class="text1">小米8  SE  6GB+48GB</p>
-			 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
-			 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
-			 					
-			 				</li>
-			 				<li class="four">
-								<div class="jian">减600元</div>
+								 					 					 		
+					
+					</div>
 
-			 					<img src="img/pms_1527685277.65255600!220x220.jpg">
-			 					<p class="text1">小米8  SE  6GB+48GB</p>
-			 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
-			 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
-			 					
-			 				</li>
-			 				<li class="one five">
-								<div class="jian">享8折</div>
-
-			 					<img src="img/pms_1527685277.65255600!220x220.jpg">
-			 					<p class="text1">小米8  SE  6GB+48GB</p>
-			 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
-			 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
-			 					
-			 				</li>
-			 				<li class="six">
-								<div class="jian">减100元</div>
-
-			 					<img src="img/pms_1527685277.65255600!220x220.jpg">
-			 					<p class="text1">小米8  SE  6GB+48GB</p>
-			 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
-			 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
-			 				
-			 				</li>
-			 				<li class="seven">
-								<div class="jian">减130元</div>
-
-			 					<img src="img/pms_1527685277.65255600!220x220.jpg">
-			 					<p class="text1">小米8  SE  6GB+48GB</p>
-			 					<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
-			 					<p class="text3"><span>1799元</span>        <del>1999</del></p>
-			 					
-			 				</li>
-			 			<li class="seven">
-							<div class="jian">减30元</div>
-
-			 				<img src="img/pms_1527685277.65255600!220x220.jpg">
-			 				<p class="text1">小米8  SE  6GB+48GB</p>
-			 				<p class="text2">AI感光双摄，三星 AMOLED 屏幕</p>
-			 				<p class="text3"><span>1799元</span>        <del>1999</del></p>
-			 			</li>
-			 				
-			 			</ul>
-			 		</div>
+					
+					
+					</div>
 			 	</div>
 			 </div>
 			 <!-- 手机结束 -->
@@ -1389,10 +1573,10 @@
 			 <!-- 图片结束 -->
 			 
 			 <!-- 家电开始 -->
-			 <div class="collocation">
-			 	<div class="collocation-top">
+			 <div class="collocation first-floor">
+			 	<div class="collocation-top ">
 			 		<div class="collocation-top-left">家电</div>
-			 		<div class="collocation-top-right">
+			 		<div class="collocation-top-right ">
 			 			<ul>
 			 				<li class="active">热门</li>
 			 				<li>电视影音</li>
@@ -1403,7 +1587,7 @@
 			 	</div>
 			 	<div class="collocation-bottom">
 			 		<div class="collocation-bottom-left">
-			 			<ul>
+			 			<ul class="active">
 			 				<li>
 			 					<img src="img/xmad_15453810333749_hDsXv.jpg">
 			 				</li>
@@ -1413,8 +1597,8 @@
 			 		</ul>
 			 		</div>
 			 		
-			 		<div class="collocation-bottom-right">
-			 			<ul>
+			 		<div class="collocation-bottom-right collocation-floor">
+			 			<ul class="active yinchan">
 			 				<li class="one">
 								<div class="new-style">新品</div>
 			 					<img src="img/pms_1524883847.49276938!220x220.jpg">
@@ -1514,7 +1698,307 @@
 			 				</div>
 			 				
 			 			</ul>
-			 		</div>
+			 		  <ul class="yinchan">
+			 			<li class="one">
+			 				<div class="new-style">新品1</div>
+			 				<img src="img/pms_1524883847.49276938!220x220.jpg">
+			 				<p class="text1">小米电视4A      43英寸青春版</p>
+			 				<p class="text2">全高清屏/人工智能语音</p>
+			 				<p class="text3"><span>1799元</span>  <del>9999</del></p>
+			 				<div class="one-top">
+			 					<p class="one-advice">五星好评，很好用，智能</p>
+			 					<p class="two-advice">来自于易烊千玺的评价</p>
+			 				</div>
+			 			</li>
+			 			<li class="two">
+			 				<div class="jian">减200元</div>
+			 				<img src="img/pms_1524883847.49276938!220x220.jpg">
+			 				<p class="text1">小米电视4A      43英寸青春版</p>
+			 				<p class="text2">全高清屏/人工智能语音</p>
+			 				<p class="text3"><span>1799元</span>  <del>9999</del></p>
+			 				<div class="one-top">
+			 					<p class="one-advice">五星好评，很好用，智能</p>
+			 					<p class="two-advice">来自于易烊千玺的评价</p>
+			 				</div>
+			 			</li >
+			 			<li class="three">
+			 				<div class="new-style">新品</div>
+			 				<img src="img/pms_1524883847.49276938!220x220.jpg">
+			 				<p class="text1">小米电视4A      43英寸青春版</p>
+			 				<p class="text2">全高清屏/人工智能语音</p>
+			 				<p class="text3"><span>1799元</span>  <del>9999</del></p>
+			 				<div class="one-top">
+			 					<p class="one-advice">五星好评，很好用，智能</p>
+			 					<p class="two-advice">来自于易烊千玺的评价</p>
+			 				</div>
+			 			</li>
+			 			<li class="four">
+			 				<img src="img/pms_1524883847.49276938!220x220.jpg">
+			 				<p class="text1">小米电视4A      43英寸青春版</p>
+			 				<p class="text2">全高清屏/人工智能语音</p>
+			 				<p class="text3"><span>1799元</span>  <del>9999</del></p>
+			 				<div class="one-top">
+			 					<p class="one-advice">五星好评，很好用，智能</p>
+			 					<p class="two-advice">来自于易烊千玺的评价</p>
+			 				</div>
+			 			</li>
+			 			<li class="one five">
+			 				<div class="jian">立享8折</div>
+			 				<img src="img/pms_1524883847.49276938!220x220.jpg">
+			 				<p class="text1">小米电视4A      43英寸青春版</p>
+			 				<p class="text2">全高清屏/人工智能语音</p>
+			 				<p class="text3"><span>1799元</span>  <del>9999</del></p>
+			 				<div class="one-top">
+			 					<p class="one-advice">五星好评，很好用，智能</p>
+			 					<p class="two-advice">来自于易烊千玺的评价</p>
+			 				</div>
+			 			</li>
+			 			<li class="six">
+			 				<img src="img/pms_1524883847.49276938!220x220.jpg">
+			 				<p class="text1">小米电视4A      43英寸青春版</p>
+			 				<p class="text2">全高清屏/人工智能语音</p>
+			 				<p class="text3"><span>1799元</span>  <del>9999</del></p>
+			 				<div class="one-top">
+			 					<p class="one-advice">五星好评，很好用，智能</p>
+			 					<p class="two-advice">来自于易烊千玺的评价</p>
+			 				</div>
+			 			</li>
+			 			<li class="seven">
+			 				<img src="img/pms_1524883847.49276938!220x220.jpg">
+			 				<p class="text1">小米电视4A      43英寸青春版</p>
+			 				<p class="text2">全高清屏/人工智能语音</p>
+			 				<p class="text3"><span>1799元</span>  <del>9999</del></p>
+			 				<div class="one-top">
+			 					<p class="one-advice">五星好评，很好用，智能</p>
+			 					<p class="two-advice">来自于易烊千玺的评价</p>
+			 				</div>
+			 			</li>
+			 			<div class="last-li">
+			 				<ul>
+			 					<li>
+			 					<div class="last-li-left">	
+			 					<div class="one1">小米净水器</div>
+			 							<div class="two2-one1">1799元</div>
+			 						</div>
+			 						<div class="li-img">
+			 							<img src="img/pms_1521634907.16181074!220x220.jpg" >
+			 						</div>
+			 					</li>
+			 					
+			 					<li>
+			 						<div class="last-li-left">	
+			 						<div class="one2">浏览更多</div>
+			 						<div class="two3">热门</div>
+			 						</div>
+			 						<div class="li-img">
+			 						<div class="iconfont jiantou">&#xe602;</div>
+			 						</div>
+			 				</li>
+			 				</ul>
+			 			</div>
+			 			
+			 		</ul>
+					  <ul class="yinchan">
+						<li class="one">
+							<div class="new-style">新品2</div>
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="two">
+							<div class="jian">减200元</div>
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li >
+						<li class="three">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="four">
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="one five">
+							<div class="jian">立享8折</div>
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="six">
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="seven">
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<div class="last-li">
+							<ul>
+								<li>
+								<div class="last-li-left">	
+								<div class="one1">小米净水器</div>
+										<div class="two2-one1">1799元</div>
+									</div>
+									<div class="li-img">
+										<img src="img/pms_1521634907.16181074!220x220.jpg" >
+									</div>
+								</li>
+								
+								<li>
+									<div class="last-li-left">	
+									<div class="one2">浏览更多</div>
+									<div class="two3">热门</div>
+									</div>
+									<div class="li-img">
+									<div class="iconfont jiantou">&#xe602;</div>
+									</div>
+							</li>
+							</ul>
+						</div>
+						
+					</ul>
+					  <ul class="yinchan">
+						<li class="one">
+							<div class="new-style">新品3</div>
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="two">
+							<div class="jian">减200元</div>
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li >
+						<li class="three">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="four">
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="one five">
+							<div class="jian">立享8折</div>
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="six">
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="seven">
+							<img src="img/pms_1524883847.49276938!220x220.jpg">
+							<p class="text1">小米电视4A      43英寸青春版</p>
+							<p class="text2">全高清屏/人工智能语音</p>
+							<p class="text3"><span>1799元</span>  <del>9999</del></p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<div class="last-li">
+							<ul>
+								<li>
+								<div class="last-li-left">	
+								<div class="one1">小米净水器</div>
+										<div class="two2-one1">1799元</div>
+									</div>
+									<div class="li-img">
+										<img src="img/pms_1521634907.16181074!220x220.jpg" >
+									</div>
+								</li>
+								
+								<li>
+									<div class="last-li-left">	
+									<div class="one2">浏览更多</div>
+									<div class="two3">热门</div>
+									</div>
+									<div class="li-img">
+									<div class="iconfont jiantou">&#xe602;</div>
+									</div>
+							</li>
+							</ul>
+						</div>
+						
+					</ul>
+					</div>
 			 	</div>
 			 </div>
 			 <!-- 家电结束 -->
@@ -1527,7 +2011,7 @@
 			 <!-- 图片结束 -->
 			 
 			 <!-- 智能开始 -->
-			 <div class="collocation">
+			 <div class="collocation second-floor">
 			 <div class="collocation-top">
 			 	<div class="collocation-top-left">智能</div>
 			 	<div class="collocation-top-right">
@@ -1552,8 +2036,8 @@
 			 	</ul>
 			 	</div>
 			 	
-			 	<div class="collocation-bottom-right">
-			 		<ul>
+			 	<div class="collocation-bottom-right collocation-floor">
+			 		<ul class="active yinchan">
 			 			<li class="one">
 			 				<img src="img/pms_1527754949.17141338!220x220.jpg">
 			 				<p class="text1">小米手环3</p>
@@ -1627,7 +2111,7 @@
 			 				</div>
 			 			</li>
 			 			<div class="last-li">
-			 				<ul>
+			 				<div>
 			 					<li>
 			 					<div class="last-li-left">	
 			 					<div class="one1">小米插线板小米插线板</div>
@@ -1647,11 +2131,404 @@
 			 						<div class="iconfont jiantou">&#xe602;</div>
 			 						</div>
 			 				</li>
-			 				</ul>
+			 				</div>
 			 			</div>
 			 			
 			 		</ul>
-			 	</div>
+			 	 <ul class="yinchan">
+			 		<li class="one">
+			 			<img src="img/pms_1527754949.17141338!220x220.jpg">
+			 			<p class="text1">小米手环</p>
+			 			<p class="text2"><span>799元</span><del></del></p>
+			 			<p class="text3">6.2万人评价</p>
+			 			<div class="one-top">
+			 				<p class="one-advice">五星好评，很好用，智能</p>
+			 				<p class="two-advice">来自于易烊千玺的评价</p>
+			 			</div>
+			 		</li>
+			 		<li class="two">
+			 			<img src="img/pms_1527754949.17141338!220x220.jpg">
+			 			<p class="text1">小米手环3</p>
+			 			<p class="text2"><span>799元</span><del></del></p>
+			 			<p class="text3">6.2万人评价</p>
+			 			<div class="one-top">
+			 				<p class="one-advice">五星好评，很好用，智能</p>
+			 				<p class="two-advice">来自于易烊千玺的评价</p>
+			 			</div>
+			 		</li >
+			 		<li class="three">
+			 			<img src="img/pms_1527754949.17141338!220x220.jpg">
+			 			<p class="text1">小米手环3</p>
+			 			<p class="text2"><span>799元</span><del></del></p>
+			 			<p class="text3">6.2万人评价</p>
+			 			<div class="one-top">
+			 				<p class="one-advice">五星好评，很好用，智能</p>
+			 				<p class="two-advice">来自于易烊千玺的评价</p>
+			 			</div>
+			 		</li>
+			 		<li class="four">
+			 			<img src="img/pms_1527754949.17141338!220x220.jpg">
+			 			<p class="text1">小米手环3</p>
+			 			<p class="text2"><span>799元</span><del></del></p>
+			 			<p class="text3">6.2万人评价</p>
+			 			<div class="one-top">
+			 				<p class="one-advice">五星好评，很好用，智能</p>
+			 				<p class="two-advice">来自于易烊千玺的评价</p>
+			 			</div>
+			 		</li>
+			 		<li class="one five">
+			 			<div class="jian">立减60元</div>
+			 			<img src="img/pms_1527754949.17141338!220x220.jpg">
+			 			<p class="text1">小米手环3</p>
+			 			<p class="text2"><span>799元</span><del></del></p>
+			 			<p class="text3">6.2万人评价</p>
+			 			<div class="one-top">
+			 				<p class="one-advice">五星好评，很好用，智能</p>
+			 				<p class="two-advice">来自于易烊千玺的评价</p>
+			 			</div>
+			 		</li>
+			 		<li class="six">
+			 			<div class="new-style">新品</div>
+			 			<img src="img/pms_1527754949.17141338!220x220.jpg">
+			 			<p class="text1">小米手环3</p>
+			 			<p class="text2"><span>799元</span><del></del></p>
+			 			<p class="text3">6.2万人评价</p>
+			 			<div class="one-top">
+			 				<p class="one-advice">五星好评，很好用，智能</p>
+			 				<p class="two-advice">来自于易烊千玺的评价</p>
+			 			</div>
+			 		</li>
+			 		<li class="seven">
+			 			<img src="img/pms_1527754949.17141338!220x220.jpg">
+			 			<p class="text1">小米手环3</p>
+			 			<p class="text2"><span>799元</span><del></del></p>
+			 			<p class="text3">6.2万人评价</p>
+			 			<div class="one-top">
+			 				<p class="one-advice">五星好评，很好用，智能</p>
+			 				<p class="two-advice">来自于易烊千玺的评价</p>
+			 			</div>
+			 		</li>
+			 		<div class="last-li">
+			 			<div>
+			 				<li>
+			 				<div class="last-li-left">	
+			 				<div class="one1">小米插线板小米插线板</div>
+			 					<div class="two2">69元</div>
+			 					</div>
+			 					<div class="li-img">
+			 						<img src="img/pms_1528698828.42759625!220x220.jpg" >
+			 					</div>
+			 				</li>
+			 				
+			 				<li>
+			 					<div class="last-li-left">	
+			 					<div class="one2">浏览更多</div>
+			 					<div class="two3">热门</div>
+			 					</div>
+			 					<div class="li-img">
+			 					<div class="iconfont jiantou">&#xe602;</div>
+			 					</div>
+			 			</li>
+			 			</div>
+			 		</div>
+			 		
+			 	</ul>
+				<ul class="yinchan">
+					<li class="one">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环1</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="two">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li >
+					<li class="three">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="four">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="one five">
+						<div class="jian">立减60元</div>
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="six">
+						<div class="new-style">新品</div>
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="seven">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<div class="last-li">
+						<div>
+							<li>
+							<div class="last-li-left">	
+							<div class="one1">小米插线板小米插线板</div>
+								<div class="two2">69元</div>
+								</div>
+								<div class="li-img">
+									<img src="img/pms_1528698828.42759625!220x220.jpg" >
+								</div>
+							</li>
+							
+							<li>
+								<div class="last-li-left">	
+								<div class="one2">浏览更多</div>
+								<div class="two3">热门</div>
+								</div>
+								<div class="li-img">
+								<div class="iconfont jiantou">&#xe602;</div>
+								</div>
+						</li>
+						</div>
+					</div>
+					
+				</ul>
+				<ul class="yinchan">
+					<li class="one">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环2</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="two">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li >
+					<li class="three">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="four">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="one five">
+						<div class="jian">立减60元</div>
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="six">
+						<div class="new-style">新品</div>
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="seven">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<div class="last-li">
+						<div>
+							<li>
+							<div class="last-li-left">	
+							<div class="one1">小米插线板小米插线板</div>
+								<div class="two2">69元</div>
+								</div>
+								<div class="li-img">
+									<img src="img/pms_1528698828.42759625!220x220.jpg" >
+								</div>
+							</li>
+							
+							<li>
+								<div class="last-li-left">	
+								<div class="one2">浏览更多</div>
+								<div class="two3">热门</div>
+								</div>
+								<div class="li-img">
+								<div class="iconfont jiantou">&#xe602;</div>
+								</div>
+						</li>
+						</div>
+					</div>
+					
+				</ul>
+				<ul class="yinchan">
+					<li class="one">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环8</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="two">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li >
+					<li class="three">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="four">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="one five">
+						<div class="jian">立减60元</div>
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="six">
+						<div class="new-style">新品</div>
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="seven">
+						<img src="img/pms_1527754949.17141338!220x220.jpg">
+						<p class="text1">小米手环3</p>
+						<p class="text2"><span>799元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">五星好评，很好用，智能</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<div class="last-li">
+						<ul>
+							<li>
+							<div class="last-li-left">	
+							<div class="one1">小米插线板小米插线板</div>
+								<div class="two2">69元</div>
+								</div>
+								<div class="li-img">
+									<img src="img/pms_1528698828.42759625!220x220.jpg" >
+								</div>
+							</li>
+							
+							<li>
+								<div class="last-li-left">	
+								<div class="one2">浏览更多</div>
+								<div class="two3">热门</div>
+								</div>
+								<div class="li-img">
+								<div class="iconfont jiantou">&#xe602;</div>
+								</div>
+						</li>
+						</ul>
+					</div>
+					
+				</ul>
+				
+				</div>
 			 </div>
 			 </div>
 			 <!-- 智能结束 -->
@@ -1663,7 +2540,7 @@
 			 <!-- 图片结束 -->
 			 
 		 <!-- 搭配开始 -->
-		 <div class="collocation">
+		 <div class="collocation third-floor">
 			 <div class="collocation-top">
 				 <div class="collocation-top-left">搭配</div>
 				 <div class="collocation-top-right">
@@ -1687,8 +2564,8 @@
           </ul>
 				 </div>
 				 
-				 <div class="collocation-bottom-right">
-					 <ul>
+				 <div class="collocation-bottom-right collocation-floor">
+					 <ul class="yinchan active">
 						 <li class="one">
 							 <img src="img/collocation1.jpg">
 							 <p class="text1">小米AI音箱</p>
@@ -1764,7 +2641,7 @@
 							 </div>
 						 </li>
 						 <div class="last-li">
-							 <ul>
+							 <div>
 								 <li>
 									<div class="last-li-left">	
 									<div class="one1">小米智能耳机小米插线板小米插线板</div>
@@ -1784,10 +2661,310 @@
 									 	<div class="iconfont jiantou">&#xe602;</div>
 									 </div>
 								</li>
-							 </ul>
+							 </div>
 						 </div>
 						 
 		       </ul>
+					 <ul class="yinchan">
+					 	<li class="one">
+					 		<img src="img/collocation1.jpg">
+					 		<p class="text1">小米AI音箱1</p>
+					 		<p class="text2"><span>799元</span><del></del></p>
+					 		<p class="text3">6.2万人评价</p>
+					 		<div class="one-top">
+					 			<p class="one-advice">五星好评，很好用，智能</p>
+					 			<p class="two-advice">来自于易烊千玺的评价</p>
+					 		</div>
+					 	</li>
+					 	<li class="two">
+					 		<img src="img/collocation1.jpg">
+					 		<p class="text1">小米AI音箱</p>
+					 		<p class="text2"><span>799元</span><del></del></p>
+					 		<p class="text3">6.2万人评价</p>
+					 		<div class="one-top">
+					 		<p class="one-advice">五星好评，很好用，智能</p>
+					 		<p class="two-advice">来自于易烊千玺的评价</p>
+					 		</div>
+					 	</li >
+					 	<li class="three">
+					 		<div class="jian">享9.3折</div>
+					 		<img src="img/collocation1.jpg">
+					 		<p class="text1">小米AI音箱</p>
+					 		<p class="text2"><span>799元</span><del></del></p>
+					 		<p class="text3">6.2万人评价</p>
+					 		<div class="one-top">
+					 		<p class="one-advice">五星好评，很好用，智能</p>
+					 		<p class="two-advice">来自于易烊千玺的评价</p>
+					 		</div>
+					 	</li>
+					 	<li class="four">
+					 		
+					 		<img src="img/collocation1.jpg">
+					 		<p class="text1">小米AI音箱</p>
+					 		<p class="text2"><span>799元</span><del></del></p>
+					 		<p class="text3">6.2万人评价</p>
+					 		<div class="one-top">
+					 		<p class="one-advice">五星好评，很好用，智能</p>
+					 		<p class="two-advice">来自于易烊千玺的评价</p>
+					 		</div>
+					 	</li>
+					 	<li class="one five">
+					 		<img src="img/collocation1.jpg">
+					 		<p class="text1">小米AI音箱</p>
+					 		<p class="text2"><span>799元</span><del></del></p>
+					 		<p class="text3">6.2万人评价</p>
+					 		<div class="one-top">
+					 		<p class="one-advice">五星好评，很好用，智能</p>
+					 		<p class="two-advice">来自于易烊千玺的评价</p>
+					 		</div>
+					 	</li>
+					 	<li class="six">
+					 		<div class="jian">享9.7折</div>
+					 		<img src="img/collocation1.jpg">
+					 		<p class="text1">小米AI音箱</p>
+					 		<p class="text2"><span>799元</span><del></del></p>
+					 		<p class="text3">6.2万人评价</p>
+					 		<div class="one-top">
+					 		<p class="one-advice">五星好评，很好用，智能</p>
+					 		<p class="two-advice">来自于易烊千玺的评价</p>
+					 		</div>
+					 	</li>
+					 	<li class="seven">
+					 		<div class="jian">享9折</div>
+					 		<img src="img/collocation1.jpg">
+					 		<p class="text1">小米AI音箱</p>
+					 		<p class="text2"><span>799元</span><del></del></p>
+					 		<p class="text3">6.2万人评价</p>
+					 		<div class="one-top">
+					 		<p class="one-advice">五星好评，很好用，智能</p>
+					 		<p class="two-advice">来自于易烊千玺的评价</p>
+					 		</div>
+					 	</li>
+					 	<div class="last-li">
+					 		<div>
+					 			<li>
+					 			<div class="last-li-left">	
+					 			<div class="one1">小米智能耳机小米插线板小米插线板</div>
+					 				<div class="two2">69元</div>
+					 				</div>
+					 				<div class="li-img">
+					 					<img src="img/pms_1492587660.55753313.jpg" >
+					 				</div>
+					 			</li>
+					 			
+					 			<li>
+					 				<div class="last-li-left">	
+					 				<div class="one2">浏览更多</div>
+					 				<div class="two3">热门</div>
+					 				</div>
+					 				<div class="li-img">
+					 				<div class="iconfont jiantou">&#xe602;</div>
+					 				</div>
+					 		</li>
+					 		</div>
+					 	</div>
+					 	
+					 </ul>
+					 <ul class="yinchan">
+					 <li class="one">
+					 	<img src="img/collocation1.jpg">
+					 	<p class="text1">小米AI音箱2</p>
+					 	<p class="text2"><span>799元</span><del></del></p>
+					 	<p class="text3">6.2万人评价</p>
+					 	<div class="one-top">
+					 		<p class="one-advice">五星好评，很好用，智能</p>
+					 		<p class="two-advice">来自于易烊千玺的评价</p>
+					 	</div>
+					 </li>
+					 <li class="two">
+					 	<img src="img/collocation1.jpg">
+					 	<p class="text1">小米AI音箱</p>
+					 	<p class="text2"><span>799元</span><del></del></p>
+					 	<p class="text3">6.2万人评价</p>
+					 	<div class="one-top">
+					 	<p class="one-advice">五星好评，很好用，智能</p>
+					 	<p class="two-advice">来自于易烊千玺的评价</p>
+					 	</div>
+					 </li >
+					 <li class="three">
+					 	<div class="jian">享9.3折</div>
+					 	<img src="img/collocation1.jpg">
+					 	<p class="text1">小米AI音箱</p>
+					 	<p class="text2"><span>799元</span><del></del></p>
+					 	<p class="text3">6.2万人评价</p>
+					 	<div class="one-top">
+					 	<p class="one-advice">五星好评，很好用，智能</p>
+					 	<p class="two-advice">来自于易烊千玺的评价</p>
+					 	</div>
+					 </li>
+					 <li class="four">
+					 	
+					 	<img src="img/collocation1.jpg">
+					 	<p class="text1">小米AI音箱</p>
+					 	<p class="text2"><span>799元</span><del></del></p>
+					 	<p class="text3">6.2万人评价</p>
+					 	<div class="one-top">
+					 	<p class="one-advice">五星好评，很好用，智能</p>
+					 	<p class="two-advice">来自于易烊千玺的评价</p>
+					 	</div>
+					 </li>
+					 <li class="one five">
+					 	<img src="img/collocation1.jpg">
+					 	<p class="text1">小米AI音箱</p>
+					 	<p class="text2"><span>799元</span><del></del></p>
+					 	<p class="text3">6.2万人评价</p>
+					 	<div class="one-top">
+					 	<p class="one-advice">五星好评，很好用，智能</p>
+					 	<p class="two-advice">来自于易烊千玺的评价</p>
+					 	</div>
+					 </li>
+					 <li class="six">
+					 	<div class="jian">享9.7折</div>
+					 	<img src="img/collocation1.jpg">
+					 	<p class="text1">小米AI音箱</p>
+					 	<p class="text2"><span>799元</span><del></del></p>
+					 	<p class="text3">6.2万人评价</p>
+					 	<div class="one-top">
+					 	<p class="one-advice">五星好评，很好用，智能</p>
+					 	<p class="two-advice">来自于易烊千玺的评价</p>
+					 	</div>
+					 </li>
+					 <li class="seven">
+					 	<div class="jian">享9折</div>
+					 	<img src="img/collocation1.jpg">
+					 	<p class="text1">小米AI音箱</p>
+					 	<p class="text2"><span>799元</span><del></del></p>
+					 	<p class="text3">6.2万人评价</p>
+					 	<div class="one-top">
+					 	<p class="one-advice">五星好评，很好用，智能</p>
+					 	<p class="two-advice">来自于易烊千玺的评价</p>
+					 	</div>
+					 </li>
+					 <div class="last-li">
+					 	<div>
+					 		<li>
+					 		<div class="last-li-left">	
+					 		<div class="one1">小米智能耳机小米插线板小米插线板</div>
+					 			<div class="two2">69元</div>
+					 			</div>
+					 			<div class="li-img">
+					 				<img src="img/pms_1492587660.55753313.jpg" >
+					 			</div>
+					 		</li>
+					 		
+					 		<li>
+					 			<div class="last-li-left">	
+					 			<div class="one2">浏览更多</div>
+					 			<div class="two3">热门</div>
+					 			</div>
+					 			<div class="li-img">
+					 			<div class="iconfont jiantou">&#xe602;</div>
+					 			</div>
+					 	</li>
+					 	</div>
+					 </div>
+					 
+					 </ul>
+				   <ul class="yinchan">
+				 <li class="one">
+				 	<img src="img/collocation1.jpg">
+				 	<p class="text1">小米AI音箱4</p>
+				 	<p class="text2"><span>799元</span><del></del></p>
+				 	<p class="text3">6.2万人评价</p>
+				 	<div class="one-top">
+				 		<p class="one-advice">五星好评，很好用，智能</p>
+				 		<p class="two-advice">来自于易烊千玺的评价</p>
+				 	</div>
+				 </li>
+				 <li class="two">
+				 	<img src="img/collocation1.jpg">
+				 	<p class="text1">小米AI音箱</p>
+				 	<p class="text2"><span>799元</span><del></del></p>
+				 	<p class="text3">6.2万人评价</p>
+				 	<div class="one-top">
+				 	<p class="one-advice">五星好评，很好用，智能</p>
+				 	<p class="two-advice">来自于易烊千玺的评价</p>
+				 	</div>
+				 </li >
+				 <li class="three">
+				 	<div class="jian">享9.3折</div>
+				 	<img src="img/collocation1.jpg">
+				 	<p class="text1">小米AI音箱</p>
+				 	<p class="text2"><span>799元</span><del></del></p>
+				 	<p class="text3">6.2万人评价</p>
+				 	<div class="one-top">
+				 	<p class="one-advice">五星好评，很好用，智能</p>
+				 	<p class="two-advice">来自于易烊千玺的评价</p>
+				 	</div>
+				 </li>
+				 <li class="four">
+				 	
+				 	<img src="img/collocation1.jpg">
+				 	<p class="text1">小米AI音箱</p>
+				 	<p class="text2"><span>799元</span><del></del></p>
+				 	<p class="text3">6.2万人评价</p>
+				 	<div class="one-top">
+				 	<p class="one-advice">五星好评，很好用，智能</p>
+				 	<p class="two-advice">来自于易烊千玺的评价</p>
+				 	</div>
+				 </li>
+				 <li class="one five">
+				 	<img src="img/collocation1.jpg">
+				 	<p class="text1">小米AI音箱</p>
+				 	<p class="text2"><span>799元</span><del></del></p>
+				 	<p class="text3">6.2万人评价</p>
+				 	<div class="one-top">
+				 	<p class="one-advice">五星好评，很好用，智能</p>
+				 	<p class="two-advice">来自于易烊千玺的评价</p>
+				 	</div>
+				 </li>
+				 <li class="six">
+				 	<div class="jian">享9.7折</div>
+				 	<img src="img/collocation1.jpg">
+				 	<p class="text1">小米AI音箱</p>
+				 	<p class="text2"><span>799元</span><del></del></p>
+				 	<p class="text3">6.2万人评价</p>
+				 	<div class="one-top">
+				 	<p class="one-advice">五星好评，很好用，智能</p>
+				 	<p class="two-advice">来自于易烊千玺的评价</p>
+				 	</div>
+				 </li>
+				 <li class="seven">
+				 	<div class="jian">享9折</div>
+				 	<img src="img/collocation1.jpg">
+				 	<p class="text1">小米AI音箱</p>
+				 	<p class="text2"><span>799元</span><del></del></p>
+				 	<p class="text3">6.2万人评价</p>
+				 	<div class="one-top">
+				 	<p class="one-advice">五星好评，很好用，智能</p>
+				 	<p class="two-advice">来自于易烊千玺的评价</p>
+				 	</div>
+				 </li>
+				 <div class="last-li">
+				 	<div>
+				 		<li>
+				 		<div class="last-li-left">	
+				 		<div class="one1">小米智能耳机小米插线板小米插线板</div>
+				 			<div class="two2">69元</div>
+				 			</div>
+				 			<div class="li-img">
+				 				<img src="img/pms_1492587660.55753313.jpg" >
+				 			</div>
+				 		</li>
+				 		
+				 		<li>
+				 			<div class="last-li-left">	
+				 			<div class="one2">浏览更多</div>
+				 			<div class="two3">热门</div>
+				 			</div>
+				 			<div class="li-img">
+				 			<div class="iconfont jiantou">&#xe602;</div>
+				 			</div>
+				 	</li>
+				 	</div>
+				 </div>
+				 
+				 </ul>
 				 </div>
 			 </div>
 		 </div>
@@ -1800,7 +2977,7 @@
 		 <!-- 图片结束 -->
 		 
 		 <!-- 配件开始 -->
-		 <div class="collocation">
+		 <div class="collocation fourth-floor">
 		 	<div class="collocation-top">
 		 		<div class="collocation-top-left">配件</div>
 		 		<div class="collocation-top-right">
@@ -1824,8 +3001,8 @@
 		 		</ul>
 		 		</div>
 		 		
-		 		<div class="collocation-bottom-right">
-		 			<ul>
+		 		<div class="collocation-bottom-right collocation-floor">
+		 			<ul class="yinchan active">
 		 				<li class="one">
 							<div class="new-style">新品</div>
 		 					<img src="img/pms_1527840795.6763911.jpg">
@@ -1902,7 +3079,7 @@
 		 					</div>
 		 				</li>
 		 				<div class="last-li">
-		 					<ul>
+		 					<div>
 		 						<li>
 		 						<div class="last-li-left">	
 		 						<div class="one1">小米插线板小米插线板小米插线板</div>
@@ -1922,10 +3099,313 @@
 		 							<div class="iconfont jiantou">&#xe602;</div>
 		 							</div>
 		 					</li>
-		 					</ul>
+		 					</div>
 		 				</div>
 		 				
 		 			</ul>
+					<ul class="yinchan">
+						<li class="one">
+							<div class="new-style">新品1</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">宝贝很好，很满意，不错</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="two">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li >
+						<li class="three">
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="four">
+							<div class="jian">立享1折</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="one five">
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="six">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="seven">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<div class="last-li">
+							<div>
+								<li>
+								<div class="last-li-left">	
+								<div class="one1">小米插线板小米插线板小米插线板</div>
+									<div class="two2">69元</div>
+									</div>
+									<div class="li-img">
+										<img src="img/pms_1492587660.55753313.jpg" >
+									</div>
+								</li>
+								
+								<li>
+									<div class="last-li-left">	
+									<div class="one2">浏览更多</div>
+									<div class="two3">热门</div>
+									</div>
+									<div class="li-img">
+									<div class="iconfont jiantou">&#xe602;</div>
+									</div>
+							</li>
+							</div>
+						</div>
+						
+					</ul>
+					<ul class="yinchan">
+						<li class="one">
+							<div class="new-style">新品2</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">宝贝很好，很满意，不错</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="two">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li >
+						<li class="three">
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="four">
+							<div class="jian">立享1折</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="one five">
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="six">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="seven">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<div class="last-li">
+							<div>
+								<li>
+								<div class="last-li-left">	
+								<div class="one1">小米插线板小米插线板小米插线板</div>
+									<div class="two2">69元</div>
+									</div>
+									<div class="li-img">
+										<img src="img/pms_1492587660.55753313.jpg" >
+									</div>
+								</li>
+								
+								<li>
+									<div class="last-li-left">	
+									<div class="one2">浏览更多</div>
+									<div class="two3">热门</div>
+									</div>
+									<div class="li-img">
+									<div class="iconfont jiantou">&#xe602;</div>
+									</div>
+							</li>
+							</div>
+						</div>
+						
+					</ul>
+					<ul class="yinchan">
+						<li class="one">
+							<div class="new-style">新品3</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">宝贝很好，很满意，不错</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="two">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li >
+						<li class="three">
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="four">
+							<div class="jian">立享1折</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="one five">
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="six">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<li class="seven">
+							<div class="new-style">新品</div>
+							<img src="img/pms_1527840795.6763911.jpg">
+							<p class="text1">小米8  硅胶保护套</p>
+							<p class="text2"><span>49元</span><del></del></p>
+							<p class="text3">6.2万人评价</p>
+							<div class="one-top">
+								<p class="one-advice">五星好评，很好用，智能</p>
+								<p class="two-advice">来自于易烊千玺的评价</p>
+							</div>
+						</li>
+						<div class="last-li">
+							<div>
+								<li>
+								<div class="last-li-left">	
+								<div class="one1">小米插线板小米插线板小米插线板</div>
+									<div class="two2">69元</div>
+									</div>
+									<div class="li-img">
+										<img src="img/pms_1492587660.55753313.jpg" >
+									</div>
+								</li>
+								
+								<li>
+									<div class="last-li-left">	
+									<div class="one2">浏览更多</div>
+									<div class="two3">热门</div>
+									</div>
+									<div class="li-img">
+									<div class="iconfont jiantou">&#xe602;</div>
+									</div>
+							</li>
+							</div>
+						</div>
+						
+					</ul>
 		 		</div>
 		 	</div>
 		 </div>
@@ -1938,7 +3418,7 @@
 		 <!-- 图片结束 -->
 		 
 		 <!-- 周边开始 -->
-		 <div class="collocation">
+		 <div class="collocation fifth-floor">
 		 <div class="collocation-top">
 		 	<div class="collocation-top-left">周边</div>
 		 	<div class="collocation-top-right">
@@ -1963,8 +3443,8 @@
 		 	</ul>
 		 	</div>
 		 	
-		 	<div class="collocation-bottom-right">
-		 		<ul>
+		 	<div class="collocation-bottom-right collocation-floor">
+		 		<ul class="yinchan active">
 		 			<li class="one">
 		 				<img src="img/pms_1522309592.89679012!220x220.jpg">
 		 				<p class="text1">米兔招财猫足金吊坠</p>
@@ -2037,7 +3517,7 @@
 		 				</div>
 		 			</li>
 		 			<div class="last-li">
-		 				<ul>
+		 				<div>
 		 					<li>
 		 					<div class="last-li-left">	
 		 					 <div class="one1">8H乳胶弹簧8H乳胶弹簧8H乳胶弹簧</div>
@@ -2057,10 +3537,398 @@
 		 						<div class="iconfont jiantou">&#xe602;</div>
 		 						</div>
 		 				</li>
-		 				</ul>
+		 				</div>
 		 			</div>
 		 			
 		 		</ul>
+				<ul class="yinchan">
+					<li class="one">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠1</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="two">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li >
+					<li class="three">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="four">
+						<div class="new-style">新品</div>
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="one five">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="six">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="seven">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<div class="last-li">
+						<div>
+							<li>
+							<div class="last-li-left">	
+							<div class="one1">8H乳胶弹簧8H乳胶弹簧8H乳胶弹簧</div>
+								<div class="two2">169元</div>
+								</div>
+								<div class="li-img">
+									<img src="img/pms_1502097740.52392774!220x220.jpg" >
+								</div>
+							</li>
+							
+							<li>
+								<div class="last-li-left">	
+								<div class="one2">浏览更多</div>
+								<div class="two3">热门</div>
+								</div>
+								<div class="li-img">
+								<div class="iconfont jiantou">&#xe602;</div>
+								</div>
+						</li>
+						</div>
+					</div>
+					
+				</ul>
+				<ul class="yinchan">
+					<li class="one">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠2</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="two">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li >
+					<li class="three">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="four">
+						<div class="new-style">新品</div>
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="one five">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="six">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="seven">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<div class="last-li">
+						<div>
+							<li>
+							<div class="last-li-left">	
+							<div class="one1">8H乳胶弹簧8H乳胶弹簧8H乳胶弹簧</div>
+								<div class="two2">169元</div>
+								</div>
+								<div class="li-img">
+									<img src="img/pms_1502097740.52392774!220x220.jpg" >
+								</div>
+							</li>
+							
+							<li>
+								<div class="last-li-left">	
+								<div class="one2">浏览更多</div>
+								<div class="two3">热门</div>
+								</div>
+								<div class="li-img">
+								<div class="iconfont jiantou">&#xe602;</div>
+								</div>
+						</li>
+						</div>
+					</div>
+					
+				</ul>
+				<ul class="yinchan">
+					<li class="one">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠3</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="two">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li >
+					<li class="three">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="four">
+						<div class="new-style">新品</div>
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="one five">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="six">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="seven">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<div class="last-li">
+						<div>
+							<li>
+							<div class="last-li-left">	
+							<div class="one1">8H乳胶弹簧8H乳胶弹簧8H乳胶弹簧</div>
+								<div class="two2">169元</div>
+								</div>
+								<div class="li-img">
+									<img src="img/pms_1502097740.52392774!220x220.jpg" >
+								</div>
+							</li>
+							
+							<li>
+								<div class="last-li-left">	
+								<div class="one2">浏览更多</div>
+								<div class="two3">热门</div>
+								</div>
+								<div class="li-img">
+								<div class="iconfont jiantou">&#xe602;</div>
+								</div>
+						</li>
+						</div>
+					</div>
+					
+				</ul>
+				<ul class="yinchan">
+					<li class="one">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠4</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="two">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li >
+					<li class="three">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="four">
+						<div class="new-style">新品</div>
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="one five">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="six">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<li class="seven">
+						<img src="img/pms_1522309592.89679012!220x220.jpg">
+						<p class="text1">米兔招财猫足金吊坠</p>
+						<p class="text2"><span>888元</span><del></del></p>
+						<p class="text3">6.2万人评价</p>
+						<div class="one-top">
+							<p class="one-advice">双11买买买，东西不会错</p>
+							<p class="two-advice">来自于易烊千玺的评价</p>
+						</div>
+					</li>
+					<div class="last-li">
+						<div>
+							<li>
+							<div class="last-li-left">	
+							<div class="one1">8H乳胶弹簧8H乳胶弹簧8H乳胶弹簧</div>
+								<div class="two2">169元</div>
+								</div>
+								<div class="li-img">
+									<img src="img/pms_1502097740.52392774!220x220.jpg" >
+								</div>
+							</li>
+							
+							<li>
+								<div class="last-li-left">	
+								<div class="one2">浏览更多</div>
+								<div class="two3">热门</div>
+								</div>
+								<div class="li-img">
+								<div class="iconfont jiantou">&#xe602;</div>
+								</div>
+						</li>
+						</div>
+					</div>
+					
+				</ul>
 		 	</div>
 		 </div>
 		 </div>
@@ -2230,173 +4098,160 @@
 		 
 		 <!-- 内容开始 -->
 		 
-		 <div class="neirong">
+		 <div class="neirong" onselectstart="return false;">
 		 <div class="neirong-top">内容</div>
 	
 		 <div class="neirong-bottom">
 	 
 		 <ul class="clear">
-		 	<li class="neirong1">
-		 	    <h2 class="neirong1-one">图书</h2>
-				 <div class="neirong-huan1"> 
-					<p class="zuihou-text">海量好书，享受精品阅读时光漂亮的中文排版，千万读者选择！</p>
-					<p class="zuihou-box">前往多看阅读</p>
-					<img src="img/neirong13.jpg">
-					<ul class="neirong1-five">
-						<li ></li>
-						<li ></li>
-						<li class="point1"></li>
-					</ul>
-					</div>
-					
-			   	<div class="neirong-huan1"> 
-					<h1 class="neirong1-two">好吗好的</h1>
-					<p class="neirong1-three">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
-					<p class="neirong1-four">17.79元</p>
-					<img src="img/neirong12.png">
-					<ul class="neirong1-five">
-						<li ></li>
-						<li class="point1"></li>
-						<li></li>
-					</ul>
-					</div>
+		 	<li class="neirong1 neirong1-box1">
+		 	   <h2 class="neirong1-one">图书</h2>
+				 <div style="width: 100%;overflow: hidden;">
+				 <div style="width: 300%;display: flex;position: relative;left: 0;transition: all 0.5s;" class="neirongbigbox">
+				 
 					
 					<div class="neirong-huan"> 
 					<h1 class="neirong1-two">哈利·波特与被诅咒的孩子</h1>
 					<p class="neirong1-three">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
 					<p class="neirong1-four">29.74元</p>
 					<img src="img/neirong1.png">
-					<ul class="neirong1-five">
-						<li class="point1"></li>
-						<li></li>
-						<li></li>
-					</ul>
+					
 					</div>
+			   	<div class="neirong-huan1"> 
+					<h1 class="neirong1-two">好吗好的</h1>
+					<p class="neirong1-three">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+					<p class="neirong1-four">17.79元</p>
+					<img src="img/neirong12.png">
+					
+					</div>
+					
+					<div class="neirong-huan1"> 
+					<p class="zuihou-text">海量好书，享受精品阅读时光漂亮的中文排版，千万读者选择！</p>
+					<p class="zuihou-box">前往多看阅读</p>
+					<img src="img/neirong13.jpg">
+					
+					</div>
+				 </div>
+				 </div>
+				  <ul class="neirong1-five">
+				 	<li class="active"></li>
+				 	<li ></li>
+				 	<li ></li>
+				 </ul>
 				 <div class="neirong1-left iconfont">&#xe620;</div>
 				 <div class="neirong1-right iconfont">&#xe60d;</div>
 		 	</li>
-			
-			
-		 	<li class="neirong1 neirong2"> 
+			<li class="neirong1 neirong1-box2">
+				<h2 class="neirong1-one">图书</h2>
+				<div style="width: 100%;overflow: hidden;">
+				<div style="width: 300%;display: flex;position: relative;left: 0;transition: all 0.5s;" class="neirongbigbox">
+				
+					
+					<div class="neirong-huan"> 
+					<h1 class="neirong1-two">哈利·波特与被诅咒的孩子</h1>
+					<p class="neirong1-three">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+					<p class="neirong1-four">29.74元</p>
+					<img src="img/neirong1.png">
+					
+					</div>
+					<div class="neirong-huan1"> 
+					<h1 class="neirong1-two">好吗好的</h1>
+					<p class="neirong1-three">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+					<p class="neirong1-four">17.79元</p>
+					<img src="img/neirong12.png">
+					
+					</div>
+					
+					<div class="neirong-huan1"> 
+					<p class="zuihou-text">海量好书，享受精品阅读时光漂亮的中文排版，千万读者选择！</p>
+					<p class="zuihou-box">前往多看阅读</p>
+					<img src="img/neirong13.jpg">
+					
+					</div>
+				</div>
+				</div>
+					<ul class="neirong1-five">
+					<li class="active"></li>
+					<li ></li>
+					<li ></li>
+				</ul>
+				<div class="neirong1-left iconfont">&#xe620;</div>
+				<div class="neirong1-right iconfont">&#xe60d;</div>
+			</li>
+		  <li class="neirong1 neirong1-box3">
 			<h2 class="neirong1-one">图书</h2>
-			<div class="neirong-huan1"> 
-			<p class="zuihou-text">海量好书，享受精品阅读时光漂亮的中文排版，千万读者选择！</p>
-			<p class="zuihou-box">前往多看阅读</p>
-			<img src="img/neirong13.jpg">
-			<ul class="neirong1-five">
-				<li ></li>
-				<li ></li>
-				<li class="point1"></li>
-			</ul>
-			</div>
+			<div style="width: 100%;overflow: hidden;">
+			<div style="width: 300%;display: flex;position: relative;left: 0;transition: all 0.5s;" class="neirongbigbox">
 			
-			<div class="neirong-huan1"> 
-			<h1 class="neirong1-two">好吗好的</h1>
-			<p class="neirong1-three">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
-			<p class="neirong1-four">17.79元</p>
-			<img src="img/neirong12.png">
-			<ul class="neirong1-five">
+				
+				<div class="neirong-huan"> 
+				<h1 class="neirong1-two">哈利·波特与被诅咒的孩子</h1>
+				<p class="neirong1-three">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+				<p class="neirong1-four">29.74元</p>
+				<img src="img/neirong1.png">
+				
+				</div>
+				<div class="neirong-huan1"> 
+				<h1 class="neirong1-two">好吗好的</h1>
+				<p class="neirong1-three">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+				<p class="neirong1-four">17.79元</p>
+				<img src="img/neirong12.png">
+				
+				</div>
+				
+				<div class="neirong-huan1"> 
+				<p class="zuihou-text">海量好书，享受精品阅读时光漂亮的中文排版，千万读者选择！</p>
+				<p class="zuihou-box">前往多看阅读</p>
+				<img src="img/neirong13.jpg">
+				
+				</div>
+			</div>
+			</div>
+				<ul class="neirong1-five">
+				<li class="active"></li>
 				<li ></li>
-				<li class="point1"></li>
-				<li></li>
+				<li ></li>
 			</ul>
-			</div>
-			
-			<div class="neirong-huan"> 
-			<h1 class="neirong1-two">哈利·波特与被诅咒的孩子</h1>
-			<p class="neirong1-three">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
-			<p class="neirong1-four">29.74元</p>
-			<img src="img/neirong1.png">
-			<ul class="neirong1-five">
-				<li class="point1"></li>
-				<li></li>
-				<li></li>
-			</ul>
-			</div>
 			<div class="neirong1-left iconfont">&#xe620;</div>
 			<div class="neirong1-right iconfont">&#xe60d;</div>
-			</li>
-		 	
-		 <li class="neirong1 neirong3"> 
-		 <h2 class="neirong1-one">图书</h2>
-		 <div class="neirong-huan1"> 
-		 <p class="zuihou-text">海量好书，享受精品阅读时光漂亮的中文排版，千万读者选择！</p>
-		 <p class="zuihou-box">前往多看阅读</p>
-		 <img src="img/neirong13.jpg">
-		 <ul class="neirong1-five">
-		 	<li ></li>
-		 	<li ></li>
-		 	<li class="point1"></li>
-		 </ul>
-		 </div>
-		 
-		 <div class="neirong-huan1"> 
-		 <h1 class="neirong1-two">好吗好的</h1>
-		 <p class="neirong1-three">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
-		 <p class="neirong1-four">17.79元</p>
-		 <img src="img/neirong12.png">
-		 <ul class="neirong1-five">
-		 	<li ></li>
-		 	<li class="point1"></li>
-		 	<li></li>
-		 </ul>
-		 </div>
-		 
-		 <div class="neirong-huan"> 
-		 <h1 class="neirong1-two">哈利·波特与被诅咒的孩子</h1>
-		 <p class="neirong1-three">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
-		 <p class="neirong1-four">29.74元</p>
-		 <img src="img/neirong1.png">
-		 <ul class="neirong1-five">
-		 	<li class="point1"></li>
-		 	<li></li>
-		 	<li></li>
-		 </ul>
-		 </div>
-		 <div class="neirong1-left iconfont">&#xe620;</div>
-		 <div class="neirong1-right iconfont">&#xe60d;</div>
-		 </li>
-		 
-		<li class="neirong1 neirong4"> 
-		<h2 class="neirong1-one">图书</h2>
-		<div class="neirong-huan1"> 
-		<p class="zuihou-text">海量好书，享受精品阅读时光漂亮的中文排版，千万读者选择！</p>
-		<p class="zuihou-box">前往多看阅读</p>
-		<img src="img/neirong13.jpg">
-		<ul class="neirong1-five">
-			<li ></li>
-			<li ></li>
-			<li class="point1"></li>
-		</ul>
-		</div>
-		
-		<div class="neirong-huan1"> 
-		<h1 class="neirong1-two">好吗好的</h1>
-		<p class="neirong1-three">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
-		<p class="neirong1-four">17.79元</p>
-		<img src="img/neirong12.png">
-		<ul class="neirong1-five">
-			<li ></li>
-			<li class="point1"></li>
-			<li></li>
-		</ul>
-		</div>
-		
-		<div class="neirong-huan"> 
-		<h1 class="neirong1-two">哈利·波特与被诅咒的孩子</h1>
-		<p class="neirong1-three">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
-		<p class="neirong1-four">29.74元</p>
-		<img src="img/neirong1.png">
-		<ul class="neirong1-five">
-			<li class="point1"></li>
-			<li></li>
-			<li></li>
-		</ul>
-		</div>
-		<div class="neirong1-left iconfont">&#xe620;</div>
-		<div class="neirong1-right iconfont">&#xe60d;</div>
 		</li>
+		 <li class="neirong1 neirong1-box4">
+		 	<h2 class="neirong1-one">图书</h2>
+		 	<div style="width: 100%;overflow: hidden;">
+		 	<div style="width: 300%;display: flex;position: relative;left: 0;transition: all 0.5s;" class="neirongbigbox">
 		 	
+		 		
+		 		<div class="neirong-huan"> 
+		 		<h1 class="neirong1-two">哈利·波特与被诅咒的孩子</h1>
+		 		<p class="neirong1-three">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+		 		<p class="neirong1-four">29.74元</p>
+		 		<img src="img/neirong1.png">
+		 		
+		 		</div>
+		 		<div class="neirong-huan1"> 
+		 		<h1 class="neirong1-two">好吗好的</h1>
+		 		<p class="neirong1-three">畅销作家大冰2016年新书！讲给你听，好吗好的！</p>
+		 		<p class="neirong1-four">17.79元</p>
+		 		<img src="img/neirong12.png">
+		 		
+		 		</div>
+		 		
+		 		<div class="neirong-huan1"> 
+		 		<p class="zuihou-text">海量好书，享受精品阅读时光漂亮的中文排版，千万读者选择！</p>
+		 		<p class="zuihou-box">前往多看阅读</p>
+		 		<img src="img/neirong13.jpg">
+		 		
+		 		</div>
+		 	</div>
+		 	</div>
+		 		<ul class="neirong1-five">
+		 		<li class="active"></li>
+		 		<li ></li>
+		 		<li ></li>
+		 	</ul>
+		 	<div class="neirong1-left iconfont">&#xe620;</div>
+		 	<div class="neirong1-right iconfont">&#xe60d;</div>
+		 </li>
 		 </ul>
 		 	
 		 </div>
@@ -2569,16 +4424,28 @@
       
 		 </div>
 		 <!-- 底部结束 -->
-		<!-- 固定框开始-->
+		<!-- 固定框小框开始-->
 		<ul class="youbian">	
 		<li class="one"><img src="img/98a23aae70f25798192693f21c4d4039.png" ><img src="img/74c4fcb4475af8308e9a670db9c01fdf.png" class="hidden"></li>
 		<li><img src="img/55cad219421bee03a801775e7309b920.png"><img src="img/41f858550f42eb1770b97faf219ae215.png" class="hidden"></li>
 		<li><img src="img/4f036ae4d45002b2a6fb6756cedebf02.png" ><img src="img/5e9f2b1b0da09ac3b3961378284ef2d4.png" class="hidden"></li>
 		<li><img src="img/d7db56d1d850113f016c95e289e36efa.png" ><img src="img/692a6c3b0a93a24f74a29c0f9d68ec71.png" class="hidden"></li>
-		<a href="#big_box"><li><img src="img/totop.png" ><img src="img/totop_hover.png" class="hidden"></li></a>
+		<a href="#big_box">
+			<li style="display: none;" class="huidao"><img src="img/totop.png" ><img src="img/totop_hover.png" class="hidden"></li></a>
 
 		</ul>
-		 <!-- 固定框结束 -->
+		 <!-- 固定框小框结束 -->
+		 <!-- 固定框大框开始 -->
+		 	<ul class="youbian-big">	
+		 		<li class="one"><img src="img/98a23aae70f25798192693f21c4d4039.png" ><img src="img/74c4fcb4475af8308e9a670db9c01fdf.png" class="hidden"></li>
+		 		<li><img src="img/55cad219421bee03a801775e7309b920.png"><img src="img/41f858550f42eb1770b97faf219ae215.png" class="hidden"></li>
+		 		<li><img src="img/4f036ae4d45002b2a6fb6756cedebf02.png" ><img src="img/5e9f2b1b0da09ac3b3961378284ef2d4.png" class="hidden"></li>
+		 		<li><img src="img/d7db56d1d850113f016c95e289e36efa.png" ><img src="img/692a6c3b0a93a24f74a29c0f9d68ec71.png" class="hidden"></li>
+		 		<a href="#big_box">
+		 			<li class="huidao" style="display: none;"><img src="img/totop.png" ><img src="img/totop_hover.png" class="hidden"></li></a>
+		 
+		 		</ul>
+		 	<!-- 固定框大框结束 -->
 	    </main>
 	</body>
 </html>

@@ -30,7 +30,7 @@
 	height: 24px;
 	border-right: 1px solid #e7e7e7;
 	float: left;
-	
+	cursor: pointer;
 }
 .flash-purchase-top-right-left i{
 	margin-left: 10px;
@@ -40,7 +40,7 @@
 	height: 24px;
 	float: right;
 	margin: 0px auto;
-
+	cursor: pointer;
 }
 .flash-purchase-top-right-right i{
 	margin-right: 4px;
@@ -75,21 +75,24 @@
 	border-top: 1px solid blue;
 	box-sizing: border-box;
 	height: 339px;
-
-	 background:#fff;
-	float: right;
+  background:#fff;
+	float: left;
 	margin-left: 14px;
 	text-align: center;
 	margin-top: 0px;
 	position: relative;
 	
 }
+
+.flash-purchase-bottom .clear{
+	width: 100000px;
+}
 .flash-purchase-bottom .li-two{
 	width: 234px;
 	border-top: 1px solid orange;
 	height: 339px;
 	background: #fff;
-    float: right;
+    float: left;
 	margin-left: 14px;
 	text-align: center;
 	margin-top: 0px;
@@ -103,7 +106,7 @@
 	border-top: 1px solid yellow;
 	height: 339px;
 	background: #fff;
-	float: right;
+	float: left;
 	margin-left: 14px;
 	text-align: center;
 	margin-top: 0px;
@@ -114,7 +117,7 @@
 	border-top: 1px solid green;
 	height: 339px;
 	background: #fff;
-	float: right;
+	float: left;
 	margin-left: 14px;
 	text-align: center;
 	margin-top:0px ;
@@ -473,13 +476,17 @@
 	padding: 17px 10px;
 	/* box-sizing: border-box; */
 }
-.neirong-bottom .clear .neirong1-five{
+.neirong1-five{
 	width: 100px;
 	height: 30px;
 
 	margin-left: 95px;
+	position: absolute;
+	bottom: 15px;
+	right: 105px;
 }
-.neirong-bottom .clear .neirong1-five li{
+.neirong1-five li{
+	
 	width: 10px;
 	height: 10px;
 	border-radius: 5px;
@@ -488,7 +495,7 @@
 	margin-left:20px ;
 	margin-top: 15px;
 }
-.neirong-bottom .clear .neirong1-five .point1{
+.neirong1-five .active{
 	background: rgba(66,66,66,0);
 	border: 2px solid #ff6700;
 	box-sizing: border-box;
@@ -504,7 +511,9 @@
 	box-sizing: border-box;
 
 }
-
+.neirong-bottom .clear{
+	display: flex;
+}
 .neirong-bottom .neirong4{
 	width: 296px;
 	height: 420px;
@@ -542,11 +551,8 @@
 .neirong1 .neirong-huan,.neirong-huan1{
 	width: 296px;
 	height: 340px;
-	position: absolute;
-	top: 80px;
-	left: 0;
 	background: #fff;
-
+ 
 }
  .neirong1-left{
     width: 20px;
@@ -565,6 +571,8 @@
     border-bottom-right-radius: 2px;
 	opacity: 0;
 	transition: all 0.5s;
+	cursor: pointer;
+
 }
 .neirong-bottom li:hover .neirong1-left{
 	opacity: 1;
@@ -599,6 +607,8 @@
     margin-bottom: auto;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
+		cursor: pointer;
+
 }
 /* 视频开始 */
 .play{
@@ -720,9 +730,14 @@ cursor: pointer;
 .banner-image>ul>li{
 	width: 100%;
 	height: 100%;
+	transition: all 1s;
 	position: absolute;
 	top: 0;
 	left: 0;
+	opacity: 0;
+}
+.banner-image .active{
+	opacity: 1;
 }
 .banner-image>ul>li img{
 	width: 1226px;
@@ -1312,7 +1327,6 @@ background: #FF6700;
 	position: relative;
 	margin: 14px auto;
 	margin-bottom: 24px;
-    
 }
 .top-box li{
 	width: 316px;
@@ -1514,11 +1528,23 @@ margin-right: 8px;
 	color: #FF6700;
 	
 }
-.collocation-top-right li:hover{
+.collocation-top-right .active{
 	color: #FF6700;
 	padding-bottom: 3px;
 	border-bottom: 2px solid #FF6700;
 	margin-top:20px;
+}
+.collocation-floor{
+	position: relative;
+}
+.collocation-floor .yinchan{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.collocation-floor .active{
+	display: block;
 }
 /* .collocation-top-right .active{
 	float: left;
@@ -1556,9 +1582,17 @@ margin-right: 8px;
 	float: right;
 	width: 978px;
 	height: 100%;
-	
+	/* position: relative; */
 }
-
+/* .collocation-bottom-right ul{
+	position: absolute;
+	top:0;
+	left: 0;
+	display: none;
+} */
+/* .collocation-bottom-right ul .active{
+	display: block;
+} */
 .collocation-bottom-right li{
 	width: 234px;
 	height: 300px;
@@ -1675,7 +1709,7 @@ margin-right: 8px;
 .collocation-bottom-right .last-li{
 	width: 234px;
 	height: 300px;
-    float: right;
+  float: right;
 }
 .collocation-bottom-right .last-li li{
 	margin-left: 0;
@@ -1766,16 +1800,34 @@ margin-right: 8px;
 .youbian{
 	width: 27px;
 	height: 220px;
-overflow: hidden;
+  overflow: hidden;
 	position:fixed;
-	right: 40px;
-	bottom: 80px;
+	left: 50%;
+	transform: translateX(613px);
+	bottom: 50px;
+	display: none;
+}
+.youbian-big{
+	width: 40px;
+	height: 300px;
+  overflow: hidden;
+	position:fixed;
+	right: 0px;
+	bottom: 50px;
+	display: none;
+}
+.youbian-big li{
+	width: 30px;
+	height: 44px;
+	background: #fff;
+	border: 1px solid #f5f5f5;
+	position: relative;
+	box-sizing: border-box;
 	
 }
-
 .youbian li{
-	width: 25px;
-	height: 39px;
+width: 25px;
+height: 39px;
 background: #fff;
 border: 1px solid #f5f5f5;
 position: relative;
@@ -1791,13 +1843,38 @@ box-sizing: border-box;
 	top: 10px;
 	left: 2px;
 }
+.youbian-big li img{
+	width: 30px;
+	height: 30px;
+  position: absolute;
+	top: 10px;
+	left: 2px;
+}
 .hidden{
 	display: none;
 }
 .youbian li:hover .hidden{
 	display: block;
 }
+.youbian-big li:hover .hidden{
+	display: block;
+}
 .youbian li:last-child{
 	margin-top: 20px;
 	height: 39px;
 }
+.youbian-big li:last-child{
+	margin-top: 20px;
+	height: 39px;
+}
+/* 出现东西 */
+ @media only screen and (max-width:1500px ) {
+            .youbian{
+							display: block;
+            }
+        }
+ @media only screen and (min-width:1500px ) {
+            .youbian-big{
+							display: block;
+            }
+        }

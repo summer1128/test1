@@ -69,17 +69,31 @@
 }
 .xiangqing-left{
 	height:100%;
-	
-	
 	position: relative;
 	width: 600px;
-    float: left;
+  float: left;
+	overflow: hidden;
+}
+.xiangqing-left ul{
+	width: 300%;
+	height: 100%;
+	display: flex;
+	transition: all 0.5s;
+
+}
+.xiangqing-left li{
+	width: 33.3333%;
+	height: 100%;
+	margin-left: 35px;
+}
+.xiangqing-left li:first-child{
+	width: 33.3333%;
+	height: 100%;
+	margin-left: 35px;
 }
 .xiangqing-right{
 	height:100%;
-    
-	
-	position: relative;
+  position: relative;
 	width: 606px;
 	float: right;
 	overflow: auto;
@@ -145,7 +159,7 @@
 	position: absolute;
 	top: 500px;
 }
-.huadong div:first-child{
+.huadong .active{
 	width: 60px;
 	height: 100%;
 	background: #666;
@@ -167,7 +181,6 @@
 }
 .huadong .huadong-line{
 	margin: 0 10px;
-
 }
 
 .xiangqing-right .img{

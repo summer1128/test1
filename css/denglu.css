@@ -34,14 +34,51 @@
 	padding: 0 34px;
 	box-sizing: border-box;
 }
+.xuanzecall{
+	  cursor: default;
+	  height: 53px;
+    line-height: 53px;
+		font-size: 14px;
+    margin-left: 10px;
+    color: #333;
+    border-right: 1px solid #e0e0e0;
+    display: block;
+    overflow: hidden;
+		float: left;
+		box-sizing: border-box;
+		width: 44px;
+	position: relative;
+}
+.yanzhengma{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 15px 20px;
+	font-size: 14px;
+	cursor: pointer;
+  color: #003ab5;
+	border-left: 1px solid #e0e0e0;
+}
 .shuru-top{
 	width: 100%;
 	height: 82.8px;
 	padding: 32px 0 24px;
 	box-sizing: border-box;
-    text-align: center;
-    font-size: 24px;
-    color: #e0e0e0;
+  text-align: center;
+  font-size: 24px;
+  color: #e0e0e0;
+		
+}
+.xuanzedenglu{
+	color: #666; 
+	cursor: pointer;
+}
+.xuanzedenglu:hover{
+	color: #FF6700; 
+}
+.shuru-top .active{
+	color: #FF6700; 
+
 }
 .shuru-top .line{
 	width: 1px;
@@ -55,12 +92,12 @@
 	border: 1px solid #E0E0E0;
 }
 .shuru-middle-one input{
-    width: 306px;
+  width: 298px;
 	border: none;
 	height: 22px;
-    line-height: 22px;
-    padding: 13px 16px 13px 14px;
-    display: block;
+  line-height: 22px;
+  padding: 13px 16px 13px 14px;
+  display: block;
 	color: #333;
 	outline: none;
 }
@@ -82,10 +119,11 @@
 }
 .select{
 	width: 385px;
-    margin-top: 14px;
+  margin-top: 14px;
 	display: flex;
 	justify-content: space-between;
-	    font-size: 14px;
+	font-size: 14px;
+	cursor: pointer;
 }
 .select-right{
 	color: #999;
@@ -181,4 +219,45 @@
 	text-align: center;
 	color: #757575;
 	    font-size: 14px;
+}
+.xianshigongtong{
+	width: 100%;
+	 position: absolute; 
+	 top: 20px;
+	 display: none;
+}
+.xianshi2{
+	display: block;
+}
+.source{
+   position: absolute;
+	 top: 100px;
+   left: 100px;
+}
+.source img{
+	width: 180px;
+	height: 180px;
+}
+.bigbox .text{
+	position: absolute;
+	top: 320px;
+	left: 30px;
+	font-size: 14px;
+ color: #757575;
+}
+.bigbox{
+	width:100%;
+	height:490px;
+	position:absolute;
+	 top: 80px;
+	 z-index: 11;
+	 display: none;
+}
+.bigbox1{
+	display: block;
+}
+.bigbox .text1{
+	top: 300px;
+	left: 105px;
+
 }
